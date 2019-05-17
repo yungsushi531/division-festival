@@ -1,0 +1,166 @@
+<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons-->
+<!doctype html>
+<html>
+	
+<head>
+	
+<meta charset="utf-8">
+	
+<title>Division Festival</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<!--meta tags -->
+<meta name="Description" content="The hottest festival in the UK, coming to PORTSMOUTH">
+<meta name="Keywords" content="festival,music,drake,calvinharris,">
+<link href="../css/stylessheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<style>
+	
+	.slideshow {display:none;}
+	
+</style>
+	
+	
+</head>
+
+	
+<body>
+	
+<div class="topheader">
+	
+<a href="index.html">
+  <img src="../images/logo.png" alt="divlogo">
+</a>
+
+</div>
+	
+	
+<!-- Top navigation -->
+<div class="topnavigation">
+
+  <!-- Centered link which is the HOME -->
+  <div class="topnavigationcentre">
+    <a href="index.html" >HOME</a> 
+  </div>
+
+  <!-- Left links that are not touched this is the default position-->
+  <a href="gallery.html">GALLERY</a>
+  <a href="areas.html">AREAS</a>
+
+  <!-- Right links -->
+  <div class="topnavigationright">
+    <a href="lineup.html">LINEUP</a>
+    <a href="info.html">INFO</a>
+  </div>
+</div>
+	
+	
+	
+	
+		
+<div class="marquee">   
+	
+ <marquee behavior="scroll" direction="right" scrollamount="6">
+
+  <div class="images">
+	
+   <img src="../images/drake.jpg" width="30%" height="50%" alt="movingdrake">
+   <img src="../images/future.png" width="30%" height="50%" alt="movingfuture">
+   <img src="../images/roddyricch.jpg" width="30%" height="50%" alt="movingroddy">	
+   <img src="../images/travisscott.jpg" width="30%" height="50%" alt="movingtraviss">	
+   <img src="../images/cardib.jpg" width="30%" height="50%" alt="movingcardib">	
+   <img src="../images/ajdeno.jpg" width="30%" height="50%" alt="movingajdeno">	
+   <img src="../images/subfocus.jpg" width="30%" height="50%" alt="movingsubfocus">	
+   <img src="../images/stefflondon.jpg" width="30%" height="50%" alt="moving">	
+	
+</div>
+</marquee>
+</div>	
+	
+	
+
+	
+<!--<div class="slideshow" style="max-width:500px">
+  <img class="mySlides" src="../images/drake.jpg" style="width:100%">
+  <img class="mySlides" src="../images/future.png" style="width:100%">	
+</div>-->
+	
+	<div class="title">
+	<h4> HOMEPAGE</h4>	
+	</div>
+	
+	
+	<div class="introduction">
+	
+	<div class="drakeheadline">
+   	 <img src="../images/drakeheadshot.png" >
+    	<h2>DRAKE</h2 >
+		 <p>DRAKE LOOKING TO BRING SHUTDOWN TO THE UK</p>
+		 <p>THE FAMOUS CANADIAN BORN ARTIST IS COMING BACK</p>
+		 <p>YOU CANNOT MISS THIS</p>
+    </div>
+		
+		
+	<div class="pndheadline">
+	 <img src="../images/partynextdoorhe.jpg" >
+		<h2>PARTYNEXTDOOR</h2>
+		 <p> NEW MUSIC READY TO HEADLINE FROM PARTYNEXTDOOR </p>
+		 <p> GRAB YOUR LOVE ONES AND GET READY TO CHILL</p>
+		 <p> GO AND GET READY </p>
+	</div> 
+		
+		
+	<div class="calvinheadline">
+	 <img src="../images/calvinheadshot.jpg" >
+		<h2>CALVIN HARRIS</h2>
+		 <p> CALVIN "PEOPLE ARE NOT READY FOR THIS"</p>
+		 <p> YOU HEARD WHAT HE SAID</p>
+		 <p> THE SUBWOOFERS ARE READY</p>
+	</div> 
+	
+	<div class="socialmedia">
+		
+		<!--links the picture into the website-->
+		<h2> SOCIAL MEDIA</h2>
+		<a href="https://www.instagram.com/" class="fa fa-instagram"></a> <p> INSTAGRAM </p>
+		<br>
+		<a href="https://www.facebook.com/" class="fa fa-facebook"></a> <p> FACEBOOK </p>
+		
+	
+		
+	</div>	
+		
+		
+	</div>
+	
+	
+
+<div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
+	
+	
+	
+	
+
+	
+<script>
+	var Index = 0;
+	carousel();
+
+	function carousel() {
+  		var i;
+  		var x = document.getElementsByClassName("slideshow");
+  		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+	myIndex++;
+  	if (Index > x.length) {Index = 1}    
+  	x[Index-1].style.display = "block";  
+  	setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

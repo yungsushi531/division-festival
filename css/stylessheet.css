@@ -1,0 +1,293 @@
+/*https://www.w3schools.com/howto/howto_css_topnav_centered.asp*/
+
+body{
+	background-color: #0e739b;
+}
+
+body { margin:0; }
+
+/*takes away underline from the link*/
+a {text-decoration: none; }
+
+.topheader {
+    padding: 1px;
+    height: 220px;
+    margin-bottom: 57px;
+    text-align: center;
+    background: #0e739b;
+}
+.topheader img {
+    width: 340px;
+    height: 323px;
+    margin: -20px;
+}
+
+
+
+ h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 40px;
+}
+
+/*TITLE css*/
+.title {
+    background-color: #0A51A9;
+    border: 2px solid black;
+    width: 50%;
+    height: 65px;
+	margin-left:25%;
+}
+	
+	
+h4{
+    
+	margin-top: 5px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+	
+	
+.marquee {
+    margin: 10px;
+    padding: 0px;
+    height: 200px;
+    top: 53px;
+    border: 2px solid black;
+    z-index: -1;
+	background-color: #0A51A9;
+}
+
+.images{
+	position: relative;
+    float: left;
+    width:  1000px;
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+	z-index: -1;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnavigation {
+  position: relative;
+  background-color: #0A51A9;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.topnavigation {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index:99999;
+}
+
+/* Style the links inside the navigation bar */
+.topnavigation a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnavigation a:hover {
+  background-color: black;
+  color: #0e739b;
+}
+
+.topnavigationcentre a:hover {
+  background-color: black;
+  color: #0e739b;
+}
+
+/* Add a color to the active/current link */
+.topnavigation a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+.topnavigationcentre a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnavigationright {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnavigationright {
+    float: none;
+    display: block;
+  }
+
+  .topnavigationcentre a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+/*.slideshow{
+	
+  margin: 0px auto; // center
+  width:1100px; 
+  height:500px; 
+  text-align:center; 
+	
+}*/
+
+
+
+/* Introduction CSS */
+
+
+
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+}
+	
+	
+.introduction {
+    position: relative;
+    left: -7px;
+    margin-bottom: 125px;
+    margin-top: 125px;
+}
+
+.drakeheadline {
+    width: 950px;
+    border: 3px solid BLACK;
+    padding: 12px;
+	margin: 17px;
+	background-color: #0A51A9;
+    color: black;
+}
+
+.drakeheadline img {
+    margin-right: 25px;
+	margin-top: 10px;
+    float: left;
+	width: 270px;
+	height: 200px;
+	border: 2px solid black;
+	
+}
+
+
+.pndheadline {
+    width: 950px;
+    border: 3px solid BLACK;
+    padding: 12px;
+	margin: 17px;
+	background-color: #0A51A9;
+    color: black;
+}
+
+.pndheadline img {
+    margin-right: 25px;
+	margin-top: 10px;
+    float: left;
+	width: 270px;
+	height: 200px;
+	border: 2px solid black;
+	
+}
+
+
+.calvinheadline {
+   width: 950px;
+    border: 3px solid BLACK;
+    padding: 12px;
+	margin: 17px;
+	background-color: #0A51A9;
+    color: black;
+}
+
+.calvinheadline img {
+    margin-right: 25px;
+	margin-top: 10px;
+    float: left;
+	width: 270px;
+	height: 200px;
+	border: 2px solid black;                                                   
+	
+}
+
+.socialmedia {
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    width: 234px;
+    height: 346px;
+    border: 3px solid black;
+    padding: 12px;
+    background-color: #0A51A9;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: #0A51A9;
+    text-align: left;
+    border: 2px solid black;
+}
+
+

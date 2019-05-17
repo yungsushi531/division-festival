@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	
+<head>
+	
+<meta charset="utf-8">
+<title>Division Festival</title>
+	
+<link href="../css/gallery.css" rel="stylesheet" type="text/css">
+	
+<style>
+	
+	.slideshow {display:none;}
+	
+</style>
+	
+	
+</head>
+
+	
+<body>
+	
+<div class="topheader">
+	
+<a href="index.html">
+  <img src="../images/logo.png" alt="divlogo">
+</a>
+
+</div>
+	
+	
+<!-- Top navigation -->
+<div class="topnavigation">
+
+  <!-- Centered link which is the HOME -->
+  <div class="topnavigationcentre">
+    <a href="index.html" >HOME</a> 
+  </div>
+
+  <!-- Left links that are not touched this is the default position-->
+  <a href="gallery.html">GALLERY</a>
+  <a href="areas.html">AREAS</a>
+
+  <!-- Right links -->
+  <div class="topnavigationright">
+    <a href="lineup.html">LINEUP</a>
+    <a href="info.html">INFO</a>
+  </div>
+</div>
+	
+
+<!-- Header -->
+<div class="title">
+	<h4> GALLERY</h4>	
+	</div>
+	
+
+<!-- Photo Grid, Included duplicates of pciture to test responsivenes -->
+<div class="row"> 
+  <div class="column">
+    <img src="../images/festival1.jpg" style="width:100%">
+    <img src="../images/festival2.jpg" style="width:100%">
+	<img src="../images/festival4.jpg" style="width:100%">
+	<img src="../images/festival1.jpg" style="width:100%">
+	<img src="../images/festival1.jpg" style="width:100%">
+	<img src="../images/festival4.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/festival3.jpg" style="width:100%">
+    <img src="../images/festival4.jpg" style="width:100%">
+	<img src="../images/festival3.jpg" style="width:100%">
+	<img src="../images/festival4.jpg" style="width:100%">
+	<img src="../images/festival2.jpg" style="width:100%">
+	<img src="../images/festival4.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="../images/festival5.jpeg" style="width:100%">
+    <img src="../images/festival 6.jpg" style="width:100%">
+	<img src="../images/festival7.jpg" style="width:100%">
+	<img src="../images/festival 6.jpg" style="width:100%">
+	<img src="../images/festival5.jpeg" style="width:100%">
+    <img src="../images/festival4.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../images/festival7.jpg" style="width:100%">
+    <img src="../images/FESTIVAL9.jpg" style="width:100%">
+	<img src="../images/FESTIVAL9.jpg" style="width:100%">
+	<img src="../images/festival7.jpg" style="width:100%">
+	<img src="../images/festival 6.jpg" style="width:100%">
+	<img src="../images/festival2.jpg" style="width:100%">
+  </div>
+</div>
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
+	
+
+<script>
+	var Index = 0;
+	carousel();
+
+	function carousel() {
+  		var i;
+  		var x = document.getElementsByClassName("slideshow");
+  		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+	myIndex++;
+  	if (Index > x.length) {Index = 1}    
+  	x[Index-1].style.display = "block";  
+  	setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+
+
+
+	<script src="js/scripts.js"></script>
+	
+	
+	
+	
+
+</body>
+</html>
+
